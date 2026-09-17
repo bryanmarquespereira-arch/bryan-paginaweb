@@ -22,8 +22,8 @@
     }
 
     main {
-      background-color: #ffffff;
-      color: #723584;
+      background-color: #e6e20d;
+      color: #000000;
       margin: 0 auto;
       padding: 16px;
       display: flex;
@@ -32,7 +32,7 @@
 
     article {
       display: flex;
-      border: 1px solid #723584;
+      border: 1px solid #000000;
       margin: 16px;
       gap: 16px;
       padding: 16px;
