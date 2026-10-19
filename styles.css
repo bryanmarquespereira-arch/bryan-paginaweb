@@ -5,67 +5,87 @@
     --cor-texto: #151428;
     --cor-contraste: #f3eef7;
     --cor-botao: #f9f9f9;
+
+    --fonte-texto: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-header {
-    background-color: var(--cor-primaria);
+.tema-escuro9{
+--cor-primaria: #434547;
+    --cor-secundaria: #3b3d3f;
+    --cor-fundo: #080505;
+    --cor-texto: #fcfcfc;
+    --cor-contraste: #f3eef7;
+    --cor-botao: #221d1d;
+}
+.tema-escuro a{
+color:var(--cor-secundaria);
 }
 
-main {
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
+.tema-escuro p{
+color:var(--cor-texto);
 }
 
-    <!-- No arquivo index.html -->
-    <body class="tema-escuro">
-
-    /* No arquivo style.css */
-    .tema-escuro {
-    --cor-primaria: #c9e3ff; /* Um azul mais claro para destacar no fundo escuro */
-    --cor-fundo: #151428;    /* Fundo escuro */
-    --cor-texto: #ffffff;   /* Texto branco */
-    /* Continue invertendo as cores conforme o seu layout */
+.tema-escuro header p{
+color:var(--cor-contraste);
 }
 
-.tema-escuro a {
-
+body{
+max-width: 100vw
+font-family: var(--fonte-texto)
 }
 
-.tema-escuro a {
-    color: var(--cor-secundaria);
+   header{
+   background-color:var(--cor-primaria);
+   color:var(--cor-contraste);
+   text-align: center;
+   margin: 0 auto
+   padding: 16px;
+   }
+ 
+main{
+background-color:var(--cor-fundo);
+color:var(--cor-primaria)
+margin: 0 auto;
+padding: 16px;
+
+display: flex;
+flex-wrap: wrap;
 }
 
-.tema-escuro p {
+article {
+display: flex;
 
+border: 1px solid #080505;
+
+margin: 16px;
+gap: 16px;
+padding: 16px;
+
+flex: 1 1 30%
+
+flex-direction: column;
+align-itens: center;
+text-align: center;
+justify-content: center;
 }
 
-.tema-escuro p {
-    color: var(--cor-texto);
+img {
+width: 40px;
+height: 40px;
+object-fit: cover;
+border-radius: 50%;
 }
 
-.tema-escuro header p {
-
+.artigo-autor {
+font-weight: bold;
 }
 
-.tema-escuro header p {
-    color: var(--cor-contraste);
+.btn-tema-escuro{
+position: fixed;
+bottom: 16px;
+right: 16px;
+font-size: 32px;
+padding: 12;
+background-color: var(--cor-primaria);
+border-radius: 30%;
 }
-
---fonte-texto:
-
-body {
-    max-width: 100vw;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
-    max-width: 100vw;
-    font-family: 'Segoe UI', sans-serif;
-}
-
-body {
-    max-width: 100vw;
-    font-family: var(--fonte-texto);
-}
-
---fonte-texto: 'Segoe UI', sans-serif;
