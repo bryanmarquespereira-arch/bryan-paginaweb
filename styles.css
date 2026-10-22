@@ -1,94 +1,96 @@
 :root {
-    --cor-primaria: #f6f9fc;
-    --cor-secundaria: #f1f4f7;
-    --cor-fundo: #ffffff;
-    --cor-texto: #151428;
-    --cor-contraste: #060208;
-    --cor-botao: #e4dede;
+  --cor-primaria: #f6f9fc;
+  --cor-secundaria: #f1f4f7;
+  --cor-fundo: #ffffff;
+  --cor-texto: #151428;
+  --cor-contraste: #060208;
+  --cor-botao: #e4dede;
 
-    --fonte-texto: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --fonte-texto: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Classe corrigida para o tema escuro */
+/* Corrigido: renomeado de .tema-escuro9 para .tema-escuro */
 .tema-escuro {
-    --cor-primaria: #000000;
-    --cor-secundaria: #3b3d3f;
-    --cor-fundo: #080505;
-    --cor-texto: #ebecf0;
-    --cor-contraste: #09070a;
-    --cor-botao: #221d1d;
+  --cor-primaria: #121212;
+  --cor-secundaria: #4da6ff; /* Ajustado para dar bom contraste em links */
+  --cor-fundo: #080505;
+  --cor-texto: #ebecf0;
+  --cor-contraste: #ffffff;
+  --cor-botao: #221d1d;
 }
 
-/* Estilos de elementos dentro do tema escuro */
 .tema-escuro a {
-    color: var(--cor-secundaria);
+  color: var(--cor-secundaria);
 }
 
 .tema-escuro p {
-    color: var(--cor-texto);
+  color: var(--cor-texto);
 }
 
 .tema-escuro header p {
-    color: var(--cor-contraste);
+  color: var(--cor-contraste);
 }
 
 body {
-    max-width: 100vw;
-    font-family: var(--fonte-texto);
-    margin: 0;
-    background-color: var(--cor-fundo);
+  max-width: 100vw; /* Adicionado ; */
+  font-family: var(--fonte-texto); /* Adicionado ; */
+  margin: 0;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
 }
 
 header {
-    background-color: var(--cor-primaria);
-    color: var(--cor-contraste);
-    text-align: center;
-    margin: 0 auto;
-    padding: 16px;
+  background-color: var(--cor-primaria);
+  color: var(--cor-contraste);
+  text-align: center;
+  margin: 0 auto; /* Adicionado ; */
+  padding: 16px;
 }
 
 main {
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
-    margin: 0 auto;
-    padding: 16px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto); /* Corrigido de var(--cor-primaria) para var(--cor-texto) */
+  margin: 0 auto;
+  padding: 16px;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 article {
-    display: flex;
-    border: 1px solid #080505;
-    margin: 16px;
-    gap: 16px;
-    padding: 16px;
-    flex: 1 1 300px; /* Definido um tamanho mínimo para responsividade */
-    flex-direction: column;
-    align-items: center; /* Corrigido o erro de digitação */
-    text-align: center;
-    justify-content: center;
+  display: flex;
+  border: 1px solid #ccc; /* Corrigida a borda para se adaptar bem a temas */
+  margin: 16px;
+  gap: 16px;
+  padding: 16px;
+
+  flex: 1 1 30%; /* Adicionado ; */
+
+  flex-direction: column;
+  align-items: center; /* Corrigido de align-itens para align-items */
+  text-align: center;
+  justify-content: center;
 }
 
 img {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .artigo-autor {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .btn-tema-escuro {
-    position: fixed;
-    bottom: 16px;
-    right: 16px;
-    font-size: 32px;
-    padding: 12px; /* Adicionada a unidade px */
-    background-color: var(--cor-primaria);
-    border-radius: 30%;
-    cursor: pointer;
-    border: none;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  font-size: 32px;
+  padding: 12px; /* Corrigido de 12 para 12px */
+  background-color: var(--cor-botao);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
 }
